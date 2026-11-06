@@ -91,9 +91,10 @@ header {
   color:var(--accent)}
 nav {
   display:flex;
-  gap:30px;
+  gap:clamp(10px,1.5vw,24px);
   margin-left:auto}
 nav a {
+  white-space:nowrap;
   font-size:16px;
   text-decoration:none;
   color:var(--muted)}
@@ -291,8 +292,9 @@ footer a {
 nav {
   order:3;
   width:100%;
-  justify-content:space-between;
-  gap:12px;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:4px 12px;
   padding-top:0}
 .hero {
   padding-top:72px;
@@ -318,6 +320,12 @@ nav {
   padding-top:0}
 .portrait {
   max-width:270px}
+.about { gap:0; }
+.about > div:last-child { display:contents; }
+.about .eyebrow { grid-row:1; }
+.about h2 { grid-row:2; }
+.about .role { grid-row:3; }
+.about > .portrait { grid-row:4; justify-self:center; margin-bottom:25px; }
 .footer-inner {
   align-items:flex-start;
   flex-direction:column;

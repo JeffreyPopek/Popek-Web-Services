@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,12 @@
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>
-// Apply a saved choice before rendering; first-time visitors start in dark mode.
+// Apply a saved choice before rendering; first-time visitors start in light mode.
 try {
   const theme = localStorage.getItem('theme');
-  document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light';
 } catch {
-  document.documentElement.dataset.theme = 'dark';
+  document.documentElement.dataset.theme = 'light';
 }
 </script>
 <link rel="stylesheet" href="styles.css">
@@ -33,10 +33,11 @@ try {
 <nav aria-label="Main navigation">
 <a href="#home">Home</a>
 <a href="#services">Services</a>
+<a href="#work">Previous Work</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
-<button class="theme-toggle" aria-label="Switch to light mode" type="button">
+<button class="theme-toggle" aria-label="Switch to dark mode" type="button">
 <span class="moon" aria-hidden="true">☾</span>
 <span class="sun" aria-hidden="true">☀</span>
 </button>
@@ -106,7 +107,7 @@ try {
 </div>
 </div>
 </section>
-<section class="section container" aria-labelledby="work-title">
+<section id="work" class="section container" aria-labelledby="work-title">
 <h2 id="work-title">Previous Work</h2>
 <article class="project">
 <img class="project-image" src="assets/incarnation-img.png" alt="Church of the Incarnation website homepage" width="1422" height="898" loading="lazy" decoding="async">
