@@ -19,7 +19,7 @@ The project screenshot and founder portrait are stored in assets/ and referenced
 
 The Get a Quote and Discuss your project links in index.html open the configured Google Form in a new tab with `rel="noopener noreferrer"`. Update all four links to change the form URL. The hero and navigation contact links scroll to the Get in Touch section. The visible email addresses use `mailto:` links. The Have a Question? card submits to Netlify Forms without navigating away when JavaScript is enabled.
 
-Light mode is the default. The theme toggle saves each visitor's explicit preference.
+Dark mode is the default. The theme toggle saves each visitor's explicit preference.
 
 ## Netlify Forms deployment and setup
 
@@ -53,4 +53,4 @@ Official reference: https://developers.cloudflare.com/pages/configuration/custom
 
 ## Review checklist
 
-Check desktop and mobile layouts, keyboard focus, anchors beneath the sticky header, both themes, saved preference and first-visit light mode, reduced motion, real images, and Google Forms link. The site has accessible foundations but has not been formally audited for WCAG compliance.
+Check desktop and mobile layouts, keyboard focus, anchors beneath the sticky header, both themes, saved preference and first-visit dark mode, reduced motion, real images, and Google Forms link. The site has accessible foundations but has not been formally audited for WCAG compliance.

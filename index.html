@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,12 @@
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <script>
-// Apply a saved choice before rendering; first-time visitors start in light mode.
+// Apply a saved choice before rendering; first-time visitors start in dark mode.
 try {
   const theme = localStorage.getItem('theme');
-  document.documentElement.dataset.theme = theme === 'dark' ? 'dark' : 'light';
+  document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
 } catch {
-  document.documentElement.dataset.theme = 'light';
+  document.documentElement.dataset.theme = 'dark';
 }
 </script>
 <link rel="stylesheet" href="styles.css">
@@ -36,7 +36,7 @@ try {
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
-<button class="theme-toggle" aria-label="Switch to dark mode" type="button">
+<button class="theme-toggle" aria-label="Switch to light mode" type="button">
 <span class="moon" aria-hidden="true">☾</span>
 <span class="sun" aria-hidden="true">☀</span>
 </button>
@@ -53,7 +53,6 @@ try {
 <a class="text-link" href="#services">Explore services <span aria-hidden="true">↓</span>
 </a>
 </div>
-<p class="hero-foot">Personal service. Clear communication. A website that fits your church.</p>
 </section>
 <section id="services" class="section tinted">
 <div class="container">
@@ -68,65 +67,67 @@ try {
 <article class="service">
 <h3>Website Creation &amp; Redesign</h3>
 <p class="price">Starting at $1,500</p>
-<p>A new, mobile-friendly website built around your church.</p>
+<p>Whether you're starting from scratch or replacing an older website, I'll help you build one that's easy for visitors to navigate and use.</p>
 <ul>
-<li>Up to five pages, with help organizing content</li>
-<li>Homepage approval and two revision rounds</li>
-<li>Basic setup for search engines</li>
+<li>Up to 5 pages, with help organizing your content</li>
+<li>Mobile-friendly design that works on phones, tablets, and computers</li>
+<li>Clear navigation so visitors can find what they need</li>
+<li>Basic search engine setup and website launch</li>
 </ul>
-<p class="service-note">Extra pages and specialized features quoted separately.</p>
+<p class="service-note">Additional pages or features quoted separately.</p>
 <a class="text-link" href="https://docs.google.com/forms/d/e/1FAIpQLScG_-xDCmdUJEkMuQfmOLCdloJbnrevHXVkVhbT_5SIB1imEw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Discuss your project <span aria-hidden="true">↗</span></a>
 </article>
 <article class="service">
 <h3>Website Improvements</h3>
 <p class="price">Request a quote</p>
-<p>Make your existing website clearer and easier to use.</p>
+<p>If your website is outdated, difficult to navigate, or has problems you'd like fixed, I can help without rebuilding the entire thing.</p>
 <ul>
-<li>Better layouts and navigation</li>
-<li>Mobile fixes and troubleshooting</li>
-<li>Help moving content or changing platforms</li>
+<li>Updating page layouts and navigation</li>
+<li>Fixing mobile display issues and broken features</li>
+<li>Adding or reorganizing pages</li>
+<li>Moving content to a different website platform</li>
 </ul>
-<p class="service-note">Quoted to fit your project.</p>
+<p class="service-note">Pricing depends on the changes you need.</p>
 <a class="text-link" href="https://docs.google.com/forms/d/e/1FAIpQLScG_-xDCmdUJEkMuQfmOLCdloJbnrevHXVkVhbT_5SIB1imEw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Discuss your project <span aria-hidden="true">↗</span></a>
 </article>
 <article class="service">
 <h3>Monthly Website Care</h3>
 <p class="price">Contact for pricing</p>
-<p>Practical help keeping your website up to date.</p>
+<p>I'll help keep your website updated so you can focus on running your church.</p>
 <ul>
-<li>Routine checks and software updates</li>
-<li>Small content changes</li>
-<li>Ongoing technical assistance</li>
+<li>Small updates to text, photos, and announcements</li>
+<li>Updating service times, events, or other information</li>
+<li>Checking for broken links and website issues</li>
+<li>Help with minor technical problems</li>
 </ul>
-<p class="service-note">Care tailored to your website.</p>
+<p class="service-note">Larger changes are quoted separately.</p>
 <a class="text-link" href="https://docs.google.com/forms/d/e/1FAIpQLScG_-xDCmdUJEkMuQfmOLCdloJbnrevHXVkVhbT_5SIB1imEw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Discuss your project <span aria-hidden="true">↗</span></a>
 </article>
 </div>
 </div>
 </section>
 <section class="section container" aria-labelledby="work-title">
-<p class="eyebrow">Previous work</p>
-<h2 id="work-title">Built for a local community.</h2>
+<h2 id="work-title">Previous Work</h2>
 <article class="project">
 <img class="project-image" src="assets/incarnation-img.png" alt="Church of the Incarnation website homepage" width="1422" height="898" loading="lazy" decoding="async">
 <div>
 <p class="eyebrow">Church website · San Francisco</p>
 <h3>Church of the Incarnation</h3>
-<p>Migration and rebuilding of an existing church website on a modern website platform, with improvements to its presentation, usability, and maintainability.</p>
+<p>I rebuilt the Church of the Incarnation's website to make it easier for visitors to find information about services, events, and church activities. I also helped organize the site's content and made it easier for the church to keep information up to date.</p>
 <a class="button button-secondary" href="https://incarnationsf.org/" target="_blank" rel="noopener noreferrer">View Live Website</a>
 </div>
 </article>
 </section>
 <section id="about" class="section tinted">
 <div class="container about">
-<img class="portrait" src="assets/founder.jpg" alt="Jeffrey Popek, founder of Popek Web Services" width="690" height="800" loading="lazy" decoding="async">
+<img class="portrait" src="assets/founder.jpg" alt="Jeffrey Popek, founder of Popek Web Services" width="690" height="911" loading="lazy" decoding="async">
 <div>
 <p class="eyebrow">About the founder</p>
 <h2>Hello, I'm Jeffrey Popek.</h2>
 <p class="role">Founder & Web Developer</p>
 <p>I'm a San Francisco-based programmer with a bachelor's degree in Game Programming from Champlain College. I've also worked with local churches to build and improve their websites.</p>
 <p>As a churchgoer myself, I'm familiar with how churches operate, including how vestries make decisions and how things can sometimes take time to get approved. I understand that process, and I want to make building or updating a website as easy as possible for everyone involved.</p>
-<p>At Popek Web Services, my goal is to create simple, reliable websites that are easy to use and maintain. You'll be working directly with me throughout the process, so you'll always know who to reach out to if you have questions or need something changed.</p>
+<p>I focus on building websites that are easy for visitors to use and simple for churches to maintain. You'll work directly with me throughout the project, so if you have questions or need something changed, you'll know exactly who to contact.</p>
 </div>
 </div>
 </section>
@@ -137,7 +138,7 @@ try {
 <article class="contact-card">
 <h3>Start a Project</h3>
 <p>Tell me about your website and what you're looking for.</p>
-<a class="button button-quote" href="https://docs.google.com/forms/d/e/1FAIpQLScG_-xDCmdUJEkMuQfmOLCdloJbnrevHXVkVhbT_5SIB1imEw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" aria-describedby="quote-note">Get a Quote</a>
+<a class="button button-quote" href="https://docs.google.com/forms/d/e/1FAIpQLScG_-xDCmdUJEkMuQfmOLCdloJbnrevHXVkVhbT_5SIB1imEw/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">Get a Quote</a>
 </article>
 <article class="contact-card">
 <h3>Have a Question?</h3>
@@ -164,6 +165,7 @@ try {
 </div>
 <button class="button" type="submit">Send Message</button>
 <p class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<p class="small muted form-privacy">Your contact information will only be used to respond to your message.</p>
 </form>
 </article>
 </div>

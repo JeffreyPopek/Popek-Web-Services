@@ -134,7 +134,7 @@ nav a:hover,.text-link:hover {
   display:flex;
   align-items:center;
   gap:28px;
-  margin:40px 0 64px}
+  margin:40px 0 0}
 .button {
   display:inline-flex;
   align-items:center;
@@ -160,12 +160,6 @@ nav a:hover,.text-link:hover {
   text-decoration:none}
 .text-link span {
   margin-left:12px}
-.hero-foot {
-  padding-top:22px;
-  border-top:1px solid var(--border);
-  font-size:16px;
-  color:var(--muted);
-  margin:0}
 .section {
   padding-top:104px;
   padding-bottom:104px}
@@ -173,14 +167,13 @@ nav a:hover,.text-link:hover {
   background:var(--surface);
   border-block:1px solid var(--border)}
 .section-heading {
-  display:grid;
-  grid-template-columns:1.4fr 1fr;
-  gap:80px;
-  align-items:end;
-  margin-bottom:40px}
+  display:block;
+  margin-bottom:20px}
 .section-heading p:last-child {
   color:var(--muted);
-  max-width:350px}
+  font-style:italic;
+  margin-bottom:0;
+  max-width:65ch}
 .services {
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -230,7 +223,7 @@ nav a:hover,.text-link:hover {
 .portrait {
   width:75%}
 @media(min-width:901px) {
-  .about > .portrait { justify-self:end; }
+  .about > .portrait { width:100%; }
 }
 .project>div>p:not(.eyebrow) {
   color:var(--muted)}
@@ -289,8 +282,8 @@ footer a {
   width:calc(100% - 40px)}
 .nav-wrap {
   flex-wrap:wrap;
-  gap:10px;
-  padding:14px 0}
+  gap:4px;
+  padding:8px 0}
 .brand {
   font-size:16px}
 .theme-toggle {
@@ -300,19 +293,17 @@ nav {
   width:100%;
   justify-content:space-between;
   gap:12px;
-  padding-top:9px}
+  padding-top:0}
 .hero {
   padding-top:72px;
   padding-bottom:64px}
-.hero-foot {
-  max-width:100%}
 .section {
   padding-block:72px}
 .section-heading,.project,.about {
   grid-template-columns:1fr;
   gap:25px}
 .section-heading {
-  margin-bottom:28px}
+  margin-bottom:20px}
 .section-heading p:last-child {
   max-width:100%}
 .services {
@@ -424,5 +415,12 @@ footer a { overflow-wrap:anywhere; max-width:100%; }
   .contact-card .button { width:100%; }
   .hero { padding-top:56px; padding-bottom:48px; }
   .section { padding-block:56px; }
-  .actions { margin:32px 0 40px; }
+  .actions { margin:32px 0 0; }
+}
+.form-privacy { margin:20px 0 0; }
+@media(max-width:360px) {
+  nav { gap:4px; }
+  .brand { gap:4px; font-size:14px; }
+  .brand-mark { width:28px; margin-right:2px; }
+  .service, .service:first-child, .contact-card { padding:24px; }
 }

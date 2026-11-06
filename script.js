@@ -37,10 +37,13 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 const contactForm = document.querySelector('.contact-form');
 const submitButton = contactForm.querySelector('button[type="submit"]');
 const formStatus = contactForm.querySelector('.form-status');
+const messageField = contactForm.querySelector('[name="message"]');
+messageField.addEventListener('input', () => messageField.setCustomValidity(''));
 let submitting = false;
 
 contactForm.addEventListener('submit', async (event) => {
   event.preventDefault();
+  messageField.setCustomValidity(messageField.value.trim() ? '' : 'Please enter a message.');
   if (submitting || !contactForm.reportValidity()) return;
 
   const body = new URLSearchParams(new FormData(contactForm)).toString();
