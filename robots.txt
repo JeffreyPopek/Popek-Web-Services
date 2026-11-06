@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://popekwebservices.com/sitemap.xml
